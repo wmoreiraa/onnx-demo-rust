@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "onnx-demo-rust"
+version = "0.1.0"
+description = ""
+authors = ["wmoreiraa <walber3@gmail.com>"]
+readme = "README.md"
+packages = [{include = "onnx_demo_rust"}]
+
+[tool.poetry.dependencies]
+python = "3.9.5"
+pytorch-forecasting = "^0.10.3"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.260"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+target-version = "py39"
