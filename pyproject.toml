@@ -9,6 +9,9 @@ packages = [{include = "onnx_demo_rust"}]
 [tool.poetry.dependencies]
 python = "3.9.5"
 pytorch-forecasting = "^0.10.3"
+pyarrow = "^11.0.0"
+numpy = "1.19.5"
+tensorboard = "^2.12.1"
 
 
 [tool.poetry.group.test.dependencies]

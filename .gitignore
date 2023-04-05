@@ -6,7 +6,7 @@ __pycache__/
 # C extensions
 *.so
 
-lightining_logs*
+lightning_logs/
 
 #
 # Distribution / packaging
@@ -148,7 +148,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
+*.ckpt
 # pytype static type analyzer
 .pytype/
 
