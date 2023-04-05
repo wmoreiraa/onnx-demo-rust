@@ -15,8 +15,8 @@ class Preprocessor:
     
     def run(self) -> dict:    
         training_cutoff = self.data["time_idx"].max() - 6
-        max_encoder_length = 36
-        max_prediction_length = 6
+        max_encoder_length = c.max_encoder_length
+        max_prediction_length = c.max_prediction_length
 
         training = TimeSeriesDataSet(
             self.data[lambda x: x.time_idx <= training_cutoff],

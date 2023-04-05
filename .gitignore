@@ -8,6 +8,7 @@ __pycache__/
 
 lightning_logs/
 
+*.png
 #
 # Distribution / packaging
 .Python
